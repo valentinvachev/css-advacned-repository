@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    margin: 0 auto;
+    max-width: 50vw;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.site-header {
+    min-height: 25vh;    
+    background: url('image-bg.jpg') no-repeat top;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.site-header::before {
+    display: block;
+    content: " ";
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.site-header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    color: white;
+}
+
+
+.boxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 3em;
+}
+
+.boxes section {
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-main h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.site-feedback {
+    margin: 0 2em;
+    text-align: center;
+}
+
+.site-feedback h1 {
+    margin-bottom: 1em;
+}
+
+
+.site-feedback ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 3em;
+}
+
+.site-feedback ul li {
+    flex: 1 1 30%;
+}
+
+.site-feedback ul li img {
+    width: 30%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.site-footer {
+    margin-top: 1.5em;
+    min-height: 30vh; 
+    background-color: gray;
+}
+
+.footer-wrapper {
+    margin: 1em auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.contacts {
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form, .map {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+input {
+    display: inline-block;
+    padding: 7em;
+    margin: 1em 0;
+}
+
+.site-footer > p {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
